@@ -15,7 +15,7 @@ When the reader has completed this code pattern, they will understand how to:
 * Work with the `Watson Discovery` service through API calls to perform search on text chunks.
 * Create a python flask Application and deploy on IBM Cloud.
 
-![architecture](doc/source/images/Architecture.png)
+<center> ![architecture](doc/source/images/Architecture.png)</center>
 
 ## Flow
 
