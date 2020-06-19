@@ -1,4 +1,5 @@
-## Create a Python Flask Audio Search Application with `Watson Speech to Text` and `Watson Discovery`. 
+## Create a Python Flask Audio Search Application with Watson Speech to Text and Watson Discovery
+
 Often while listening to a Podcast or probably listening to a course video/audio files, we might to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
 In this code pattern, we will create an application with which you can search within the audio/video files. Not only search but it will highlight the part where `Search String/Topic` is occuring in the video/audio. This code pattern will perform  Natural language query search in audio files and get back with the results with the proper time frame where your search is being talked about.  
