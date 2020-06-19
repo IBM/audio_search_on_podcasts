@@ -1,6 +1,3 @@
-### Work in Progress.
-### audio_search_on_podcasts
-
 ## Create a Python Flask Audio Search Application with `Watson Speech to Text` and `Watson Discovery`. 
 Often while listening to a Podcast or probably listening to a course video/audio files, we might to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
@@ -124,10 +121,6 @@ http://localhost:8080
 
 * The main GUI screen:
 
-
-# Links
-
-* 
 
 
 
