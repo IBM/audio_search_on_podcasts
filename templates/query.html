@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Finder</title>
+  <style>
+   audio { width: 920px; }
+
+#container {
+    width: 100%;
+    background-color: #ffcc33;
+    margin: auto;
+}
+#first {
+    width: 60%;
+    float: left;
+    height: 700px;
+        background-color: white;
+}
+#second {
+    width: 40%;
+    float: left;
+    height: 700px;
+    background-color: white;
+}
+#clear {
+    clear: both;
+}
+</style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static',filename='carbon-components.min.css')}}">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+  <nav class="bx--header">
+        <a class="bx--header__name" href="javascript:void(0)" title="">
+
+            </span> Smart Finder - Code Pattern
+        </a>
+        <nav class="bx--header__nav" aria-label="Platform Name" data-header-nav>
+        </nav>
+    </nav>
+    <br><br><br><br>
+
+<link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='videojs.markers.css')}}" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+<script src= "{{ url_for('static', filename='videojs-markers.js')}}" ></script>
+
+
+<div id="container">
+    <div id="first"  style =" float : left; padding-top: 50px; padding-right: 200px; padding-bottom: 50px; padding-left: 100px;">
+      <video id="demo" width="890px" height="610px"  controls class="video-js vjs-default-skin">
+   <source src={{file_path}} type="video/mp4">
+</video>
+</div>
+    <div id="second" style =" float : left; padding-top: 50px; padding-right: 200px; padding-bottom: 50px; padding-left: 100px;">
+      
+      <div id="chatbox" style="  background-color: lightgrey;border: 5px solid gray; width:500px; height: 610px;">
+        <p class="botText"><span><b><h4></h4></b></span><br><span><b><h4>Contents:</h4></b></span><br></p>
+      </div>
+    </div>
+</div>
+
+<hr style="height:1px;border-width:0;color:gray;background-color:gray; width:80%">
+
+<div style="text-align:center;background-color: lightgrey;border: 15px solid gray;padding: 80px;margin: 20px;">
+      <div id="chatbox">
+        <p class="botText"><span></span></p>
+      </div>
+      <div id="userInput">
+        <label style="font-size:24px; padding-right: 30px;">User Query        :</label>
+        <input style="width: 500px; height: 30px" id="textInput" type="text" name="msg" placeholder="Type your query here">
+        <input id="buttonInput" type="submit" class="btn btn-success" value="Send">
+      </div>
+
+      <script>
+
+function myFunction(time_display,text_display) {
+  var abc = videojs('demo');
+  abc.currentTime(time_display);
+  var xyz = []; // create an empty array
+  
+  xyz.push({
+      time: time_display,
+      text: text_display
+  });
+  console.log(xyz)
+  abc.markers.add(xyz);
+}
+
+function getBotResponse() {
+var player = videojs('demo');
+var xyz =  [
+   ];
+
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          $("#textInput").val("");
+          
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var obj = JSON.parse(data);
+            var botHtml = '<button onclick="myFunction('+obj.time+",\'"+obj.text+'\')">'+ obj.text+'</button><br>';
+            $("#chatbox").append(botHtml);
+
+            xyz.push(obj);
+           
+            
+  player.markers({
+   markerStyle: {
+      'width':'9px',
+      'border-radius': '40%',
+      'background-color': 'red'
+   },
+   markerTip:{
+      display: true,
+      text: function(marker) {
+         return marker.text;
+      }
+   },
+   breakOverlay:{
+      display: true,
+      displayTime: 4,
+      style:{
+         'width':'100%',
+         'height': '30%',
+         'background-color': 'rgba(10,10,10,0.6)',
+         'color': 'white',
+         'font-size': '16px'
+      },
+      text: function(marker) {
+         return marker.text;
+      },
+   },
+   markers: xyz
+});
+      
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        });
+      </script>
+    </div>
+</body>
+
+
+</html>
