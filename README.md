@@ -82,31 +82,44 @@ Create the service:
 
 > Note: For this Code Pattern, you can work with the `LITE` Plan. 
 
-* click `Launch Watson Discovery`. 
-* to Create a new data collection, click on the ``
 
-<<<<<<<<<<<<<add_document(self, environment_id, collection_id, file=None, filename=None, file_content_type=None, metadata=None, **kwargs)>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
 
 ## 4. Run The Application Locally
 
-
-
 ### a. Update global variables in app.py
 
+Navigate to the cloned repo and open `app.py` file
+
+  ![Global Variables](doc/source/images/global_variables.png)
+  
+* Enter `Discovery API Key` and `Discovery URL` saved from earlier steps in placeholder in the flask server code as shown above.
+* Similarly, enter `Speech to Text API Key` and `Speech to Text URL` saved from earlier steps in placeholder in the flask server code as shown above.
+* Enter the desired name for your Discovery Environment, or use your existing environment name. Update the variable `envname`.
+* Enter the desired name for the Collection that will be created for this project. Update the variable `collection_name`.
 
 ### b. Install requirement.txt
 
+* Open the Terminal on the cloned repo folder.
+* Run the command
+
+```python
+pip install -r requirements.txt
+```
 
 ### c. Run the flask app
 
+* Now run the below command
 
+```python
+python app.py
+```
 
+* Open your browser and type:
 
-
-
-
-
+```
+http://localhost:8080
+```
 # Sample output
 
 * The main GUI screen:
