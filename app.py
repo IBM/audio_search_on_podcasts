@@ -26,10 +26,10 @@ app.config["CHUNK_FILES"]="static/audios/chunks"
 
 '''Initialize Global Variables'''
 global file_name
-apikey_discovery='<Enter-Discovery-APIKEY>'
-url_discovery='<Enter-Discovery-URL->'
-apikey_speech2text='IFCaEb9iwcS5B3PjAw_zmCaNArbeSi1KaRglnr-9W-A4'
-url_speech2text='https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/63409ac1-5ea2-4d2c-bd0e-55c74e673833'
+apikey_discovery='<Enter-Discovery-apikey>'
+url_discovery='<Enter-Discovery-url->'
+apikey_speech2text='<Enter-Speech2Txt-apikey>'
+url_speech2text='<Enter-Speech2Txt-url>'
 # Environment Name to create or Existing Environment Name
 envname='Podcast_collection'
 collection_name='Audio_Podcast_collection'
