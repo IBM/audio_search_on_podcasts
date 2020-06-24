@@ -35,9 +35,6 @@ When the reader has completed this code pattern, they will understand how to:
 * [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text): easily convert audio and voice into written text for quick understanding of content.
 * [IBM Watson Discovery](https://developer.ibm.com/articles/introduction-watson-discovery/):  IBM Watson Discovery, you can ingest, normalize, enrich, and search your unstructured data (JSON, HTML, PDF, Word, and more) with speed and accuracy.
 
-# Watch the Video
-
-[![video](link)
 
 # Steps
 
@@ -91,10 +88,10 @@ In the repo parent folder, open `app.py` file.
 
   ![Global Variables](doc/source/images/global_variables.png)
   
-* Enter `Discovery API Key` and `Discovery URL` saved from earlier steps in placeholder in the flask server code as shown above.
-* Similarly, enter `Speech to Text API Key` and `Speech to Text URL` saved from earlier steps in placeholder in the flask server code as shown above.
-* Enter the desired name for your Discovery Environment, or use your existing environment name. Update the variable `envname`.
-* Enter the desired name for the Collection that will be created for this project. Update the variable `collection_name`.
+* Enter `Discovery API Key` and `Discovery URL` saved from earlier steps in placeholder in the flask server code as shown above. You can find these in line numbers 29 and 30.
+* Similarly, enter `Speech to Text API Key` and `Speech to Text URL` saved from earlier steps in placeholder in the flask server code as shown above. You can find these in line numbers 31 and 32.
+* Enter the desired name for your Discovery Environment, or use your existing environment name. Update the variable `envname`. You can find this in line number 34.
+* Enter the desired name for the Collection that will be created for this project. Update the variable `collection_name`. You can find this in line number 35.
 
 ### 4.2. Install requirement.txt
 
