@@ -85,7 +85,7 @@ If no credentials exist, select the `New Credential` button to create a new set 
 
 ## 4. Run The Application Locally
 
-### a. Update global variables in app.py
+### 4.1. Update global variables in app.py
 
 Navigate to the cloned repo and open `app.py` file
 
@@ -96,7 +96,7 @@ Navigate to the cloned repo and open `app.py` file
 * Enter the desired name for your Discovery Environment, or use your existing environment name. Update the variable `envname`.
 * Enter the desired name for the Collection that will be created for this project. Update the variable `collection_name`.
 
-### b. Install requirement.txt
+### 4.2. Install requirement.txt
 
 * Open the Terminal on the cloned repo folder.
 * Run the command
@@ -105,7 +105,7 @@ Navigate to the cloned repo and open `app.py` file
 pip install -r requirements.txt
 ```
 
-### c. Run the flask app
+### 4.3. Run the flask app
 
 * Now run the below command
 
