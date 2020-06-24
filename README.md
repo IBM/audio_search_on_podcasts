@@ -87,7 +87,7 @@ If no credentials exist, select the `New Credential` button to create a new set 
 
 ### 4.1. Update global variables in app.py
 
-Navigate to the cloned repo and open `app.py` file
+In the repo parent folder, open `app.py` file.
 
   ![Global Variables](doc/source/images/global_variables.png)
   
