@@ -21,7 +21,7 @@ When the reader has completed this code pattern, they will understand how to:
 1. The Audio/Video is processed with python libraries and perform chunking on them to convert it into smaller chunks to work with.
 1. The user interacts with the Watson Speech to Text service via the provided application UI. The Audio chunks are converted into text chunks with Watson Speech to Text.
 1. The text chunks are uploaded on Watson Discovery by calling Discovery APIs with python SDKs.
-1. The user hit a search using Discovery .
+1. The user hit a search using Discovery.
 1. The results are shown on the UI .
 
 ## Included components
