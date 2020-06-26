@@ -112,11 +112,9 @@ pip install -r requirements.txt
 python app.py
 ```
 
-* Open your browser and type:
+* The application will be listening on http://localhost:8080
 
-```
-http://localhost:8080
-```
+
 # Sample output
 
 Below are the steps to execute the application
