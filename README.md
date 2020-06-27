@@ -1,10 +1,10 @@
 ## Create a Python Flask Audio Search Application with Watson Speech to Text and Watson Discovery
 
-Often while listening to a Podcast or probably listening to a course video/audio files, we might to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
+Often while listening to a Podcast or probably listening to a course video/audio files, we might want to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
 In this code pattern, we will create an application with which you can search within the audio/video files. Not only search but it will highlight the part where `Search String/Topic` is occuring in the video/audio. This code pattern will perform  Natural language query search in audio files and get back with the results with the proper time frame where your search is being talked about.  
 
-In this example, we will use a <<<<video/audio we are using>>>> to illustrate the process. The data is provided by <<>> and includes 16 hours of medical dictation in both audio and text files.
+In this example, we will use a <<<<video we are using>>>> to illustrate the process. The data is provided by <<>> and includes 16 hours of medical dictation in both audio and text files.
 
 When the reader has completed this code pattern, they will understand how to:
 
@@ -46,10 +46,12 @@ When the reader has completed this code pattern, they will understand how to:
 
 
 ## 1. Clone the repo
+Clone the `audio_search_on_podcasts` repo locally. In a terminal, run:
 
 ```bash
 git clone https://github.com/IBM/audio_search_on_podcasts/
 ```
+
 
 ## 2. Create Watson Speech To Text
 
@@ -66,7 +68,10 @@ From your **Watson Speech to Text** service instance, select the `Service Creden
 * On the Manage page, click Show Credentials to view your credentials.
 * Copy the API Key and URL values  as they will be needed in future steps.
 
+![architecture](doc/source/images/service-credentials.png)
+
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
+
 
 
 ## 3. Create Watson Discovery
@@ -76,7 +81,10 @@ Create the service:
 - Click on the Watson Discovery. It will take to the Catalog on IBM Cloud. Just hit the `create` button.
 
 > Note: For this Code Pattern, you can work with the `LITE` Plan. 
+service-credentials-discovery
 
+
+![architecture](doc/source/images/service-credentials-discovery.png)
 
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
 
@@ -146,7 +154,7 @@ Below are the steps to execute the application
 
 # Deploy on IBM Cloud
 
-Instructions for deploying the web application on Cloud Foundry can be found [here](doc/cloud-deploy.md).
+Instructions for deploying the web application on Cloud Foundry can be found [here](https://docs.cloudfoundry.org/devguide/deploy-apps/deploy-app.html).
 
 # Learn more
 
