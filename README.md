@@ -4,7 +4,7 @@ Often while listening to a Podcast or probably listening to a course video/audio
 
 In this code pattern, we will create an application with which you can search within the audio/video files. Not only search but it will highlight the part where `Search String/Topic` is occuring in the video/audio. This code pattern will perform  Natural language query search in audio files and get back with the results with the proper time frame where your search is being talked about.  
 
-In this example, we will use a (Watson Machine Learning Introduction Video)[https://github.com/IBM/audio_search_on_podcasts/blob/master/video/watson_studio_tutorial_part1.mp4] to illustrate the process. The data is provided by <<>> and includes 16 hours of medical dictation in both audio and text files.
+In this example, we will use a [Watson Machine Learning Introduction Video](https://github.com/IBM/audio_search_on_podcasts/blob/master/video/watson_studio_tutorial_part1.mp4) to illustrate the process. The data is provided by <<>> and includes 16 hours of medical dictation in both audio and text files.
 
 When the reader has completed this code pattern, they will understand how to:
 
