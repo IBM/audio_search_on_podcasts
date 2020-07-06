@@ -72,7 +72,6 @@ From your **Watson Speech to Text** service instance, select the `Service Creden
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
 
 
-
 ## 3. Create Watson Discovery
 Create the service:
 
@@ -135,7 +134,7 @@ Visit http://localhost:8080 on your browser.
 * Now play the video and then navigate to the query box, and enter your desired search keyword. For our video we enter the following search key- `machine learning`.
 * Wait for 20-30 seconds for a response and you will receive the searched key word on the Table of Contents section. On clicking on the keyword, in this case `machine learning`, the video will begin from the most relevant occurence of the desired topic.
 
-  ![Query](doc/source/images/query_ml.gif)    
+  ![Query](doc/source/gifs/query_ml.gif)    
   
 * Similarly, you can repeat this process for other keywords, we have entered- `supervised learning` and `deep learning`. On the right side of the screen you can see all the previously searched keys as a table of contents. 
 
