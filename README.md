@@ -126,8 +126,7 @@ python app.py
 
 Visit http://localhost:8080 on your browser.
 
-* Download the video from this repo- https://github.com/IBM/audio_search_on_podcasts/blob/master/video/watson_studio_tutorial_part1.mp4
-
+* We’ll be using the video file from video/watson_studio_tutorial_part1.mp4 from the cloned folder
   ![Upload Video](doc/source/images/upload_video.png)  
 
 * Click on the Upload button and wait for 8-10 minutes for the video to complete processing and get results from the Watson Services
