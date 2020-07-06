@@ -18,7 +18,7 @@ When the reader has completed this code pattern, they will understand how to:
 ## Flow
 
 1. The user uploads the video/audio file on the UI. 
-1. The Video/Audio is processed with python libraries and perform chunking on them to convert it into smaller chunks to work with.
+1. The Video/Audio is processed with python libraries `moviepy` and `pydub` and perform chunking on them to convert it into smaller chunks to work with.
 1. The user interacts with the Watson Speech to Text service via the provided application UI. The Audio chunks are converted into text chunks with Watson Speech to Text.
 1. The text chunks are uploaded on Watson Discovery by calling Discovery APIs with python SDKs.
 1. The user hit a search query using Discovery.
