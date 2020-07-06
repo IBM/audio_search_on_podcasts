@@ -124,7 +124,7 @@ python app.py
 
 # Sample output
 
-Below are the steps to execute the application
+Visit http://localhost:8080 on your browser.
 
 * Download the video from this repo- https://github.com/IBM/audio_search_on_podcasts/blob/master/video/watson_studio_tutorial_part1.mp4
 
