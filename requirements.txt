@@ -2,4 +2,4 @@ pydub
 moviepy
 SpeechRecognition
 ibm-watson>=4.3.0
-Flask==1.0.2
+Flask
