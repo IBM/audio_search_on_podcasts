@@ -100,7 +100,7 @@ In the repo parent folder, open `app.py` file.
 * Enter the desired name for your Discovery Environment, or use your existing environment name. Update the variable `envname`. You can find this in line number 34.
 * Enter the desired name for the Collection that will be created for this project. Update the variable `collection_name`. You can find this in line number 35.
 
-> Note: When a user creates a Watson Discovery instance, he or she would have to create an Environment where your collections (the documents that form the basis for Discover query). For more details visit - https://cloud.ibm.com/docs/discovery?topic=discovery-getting-started
+> Note: When a user creates a Watson Discovery instance, he or she would have to create an Environment to create your collections (the documents that form the basis for Discover query). For more details visit - https://cloud.ibm.com/docs/discovery?topic=discovery-getting-started
 
 ### 4.2. Install requirement.txt
 
