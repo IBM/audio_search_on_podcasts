@@ -39,7 +39,7 @@ When the reader has completed this code pattern, they will understand how to:
 # Steps
 
 1. [Clone the repo](#1-clone-the-repo)
-1. [Create Speech to text service](#2-create-speech-to-text-services)
+1. [Create Speech to text service](#2-create-speech-to-text-service)
 1. [Create Watson Discovery](#3-create-watson-discovery)
 1. [Run The Application Locally](#4-run-the-application-locally)
 
