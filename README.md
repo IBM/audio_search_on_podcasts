@@ -126,25 +126,17 @@ python app.py
 
 Visit http://localhost:8080 on your browser.
 
-* We’ll be using the video file from video/watson_studio_tutorial_part1.mp4 from the cloned folder
-  ![Upload Video](doc/source/images/upload_video.png)  
+* We’ll be using the video file from video/watson_studio_tutorial_part1.mp4 from the cloned folder. Click on the Upload button and wait for 8-10 minutes for the video to complete processing and get results from the Watson Services
 
-* Click on the Upload button and wait for 8-10 minutes for the video to complete processing and get results from the Watson Services
+  ![Upload Video](doc/source/gifs/upload_video.gif)  
 
-  ![Processing](doc/source/images/processing.png)
 
-* Once the processing is done, you will receive an Intro Page, where user can enter a query as shown. 
-
-  ![Intro_Video](doc/source/images/intro_image.png)    
-  
+* Once the processing is done, you will receive an Intro Page, where user can enter a query as shown.
 * Now play the video and then navigate to the query box, and enter your desired search keyword. For our video we enter the following search key- `machine learning`.
-
-  ![Query](doc/source/images/query_box.png)
-
 * Wait for 20-30 seconds for a response and you will receive the searched key word on the Table of Contents section. On clicking on the keyword, in this case `machine learning`, the video will begin from the most relevant occurence of the desired topic.
 
-  ![Query](doc/source/images/machine_learning.png)  
-
+  ![Query](doc/source/images/query_ml.gif)    
+  
 * Similarly, you can repeat this process for other keywords, we have entered- `supervised learning` and `deep learning`. On the right side of the screen you can see all the previously searched keys as a table of contents. 
 
   ![TOC](doc/source/images/toc.png)   
