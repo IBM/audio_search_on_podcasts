@@ -61,7 +61,7 @@ Create the service:
 
 > Note: In order to perform customization, you will need to select the `Standard` paid plan. But for this Code Pattern, you can work with the `LITE` Plan. 
 
-From your **Watson Speech to Text** service instance, select the `Service Credentials` tab.
+From your **Watson Speech to Text** service instance, select `Manage` tab:
 
 * Copy the credentials to authenticate to your service instance:
 * On the Manage page, click Show Credentials to view your credentials.
@@ -70,6 +70,8 @@ From your **Watson Speech to Text** service instance, select the `Service Creden
 ![architecture](doc/source/images/service-credentials.png)
 
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
+
+![Create Service Credential](https://github.com/IBM/offline_order_processing_during_pandemics/blob/master/doc/source/images/create-stt-credentials.gif)
 
 
 ## 3. Create Watson Discovery
@@ -85,6 +87,8 @@ service-credentials-discovery
 ![architecture](doc/source/images/service-credentials-discovery.png)
 
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
+
+![Create Service Credential](https://github.com/IBM/offline_order_processing_during_pandemics/blob/master/doc/source/images/create-stt-credentials.gif)
 
 ## 4. Run The Application Locally
 
