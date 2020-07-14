@@ -1,4 +1,4 @@
-## Create a Python Flask Audio Search Application with Watson Speech to Text and Watson Discovery
+## Dynamic Video Markers for Search Queries on Videos
 
 Often while listening to a Podcast or probably listening to a course video/audio files, we might want to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
