@@ -1,4 +1,4 @@
-## Dynamic Video Markers for Search Queries
+## A Python Flask audio search application
 
 Often while listening to a Podcast or probably listening to a course video/audio files, we might want to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
