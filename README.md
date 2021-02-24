@@ -2,7 +2,7 @@
 
 Often while listening to a Podcast or probably listening to a course video/audio files, we might want to straight jump to the topic of our interest rather going through the entire recording again and again. But finding the topics and keywords in the entire recording could be challenging. 
 
-In this code pattern, we will create an application with which you can search within the video/audio files. Not only search but it will highlight the part where searched term/context is occuring in the video/audio. This code pattern will perform  Natural language query search in audio files and get back with the results with the proper time frame where your search is being talked about.  
+In this code pattern, we will create an application with which you can search within the video/audio files. Not only search but it will highlight the part where searched term/context is occuring on the video/audio. This code pattern will perform  Natural language query search in audio files and get back with the results with the proper time frame where your search is being talked about.  
 
 In this example, we will use a [Watson Machine Learning Introduction Video](https://github.com/IBM/audio_search_on_podcasts/blob/master/video/watson_studio_tutorial_part1.mp4) to illustrate the process.
 
