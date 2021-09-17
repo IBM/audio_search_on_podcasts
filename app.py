@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import os
 import json
-from ibm_watson import DiscoveryV1
+from ibm_watson import DiscoveryV2
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from werkzeug.utils import secure_filename
 from moviepy.editor import *
@@ -37,8 +37,8 @@ interval=10*1000
 
 '''Connect to Discovery'''
 authenticator = IAMAuthenticator(apikey_discovery)
-discovery = DiscoveryV1(
-version='2019-04-30',
+discovery = DiscoveryV2(
+version='2020-08-30',
 authenticator=authenticator)
 discovery.set_service_url(url_discovery)
 
