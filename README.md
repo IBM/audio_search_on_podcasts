@@ -88,8 +88,6 @@ service-credentials-discovery
 
 If no credentials exist, select the `New Credential` button to create a new set of credentials. Then save API Key and URL values.
 
-![Create Service Credential](https://github.com/IBM/offline_order_processing_during_pandemics/blob/master/doc/source/images/create-stt-credentials.gif)
-
 ## 4. Run The Application Locally
 
 ### 4.1. Update global variables in app.py
